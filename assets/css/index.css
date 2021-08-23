@@ -1,0 +1,258 @@
+@charset "UTF-8";
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  background: white;
+  border: none;
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+}
+.owl-carousel .owl-item {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video #videoBG {
+  z-index: 0;
+  width: 100%;
+  /*height:100%;*/
+  aspect-ratio: 16/9;
+}
+.video .video-text {
+  z-index: 2;
+  font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video .video-text .inner {
+  text-align: center;
+}
+.video .video-text .inner h3 {
+  font-size: 2em;
+}
+.video .video-text .inner p {
+  font-size: 1.75em;
+  margin: 3vh 0;
+}
+.video .video-text .inner a {
+  color: #fff;
+  background: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+section {
+  font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
+  padding: 6vh 0;
+}
+
+.section01 {
+  background: yellowgreen;
+}
+.section01 .section01-title {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.section01 .section01-title p {
+  line-height: 2em;
+}
+
+.test {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test #videoBG {
+  z-index: 0;
+  width: 100%;
+  /*height:100%;*/
+  aspect-ratio: 16/9;
+}
+.test .video-text {
+  z-index: 2;
+  font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test .video-text .inner .about p {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.section06 .container .subscription {
+  box-shadow: 1px 3px 6px rgba(25, 25, 25, 0.6);
+  margin: 5vh auto;
+  padding: 20px 30px;
+}
+.section06 .container .subscription h6 {
+  font-size: 1.25em;
+}
+.section06 .container .subscription h6 span {
+  background: slategrey;
+  padding: 5px 20px;
+  color: white;
+}
+.section06 .container .subscription h5 {
+  font-size: 0.9em;
+}
+.section06 .container .subscription h5 span {
+  padding: 5px 20px;
+}
+.section06 .container .subscription .subscription-course .item-1 {
+  padding: 0 20px;
+  text-align: center;
+}
+.section06 .container .subscription .subscription-course .item-2 {
+  padding: 0 20px;
+  text-align: center;
+}
+.section06 .container .subscription .subscription-course .item-3 {
+  padding: 0 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.section06 .container .subscription .subscription-course .item-3 .information p {
+  font-size: 1em;
+  padding-bottom: 3px;
+  border-bottom: 1px #9a9a9a solid;
+}
+.section06 .container .subscription .subscription-course .item-3 .information p span {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: line-through;
+  padding: 0 3px;
+}
+.section06 .container .subscription .subscription-course .item-3 .information h3 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #B51423;
+}
+.section06 .container .subscription .subscription-course .item-3 .information h3 span {
+  font-size: 0.75em;
+}
+.section06 .container .subscription .subscription-course .item-3 .information h4 {
+  font-size: 1.1em;
+}
+.section06 .container .subscription .subscription-course .item-3 .information h4 span {
+  font-size: 1.25em;
+  padding: 0 3px;
+}
+.section06 .container .subscription .subscription-course .item-3 .information p.small {
+  font-size: 0.9em;
+  border-bottom: none;
+}
+
+.section05 .card {
+  position: relative;
+  text-align: center;
+}
+.section05 .card .card-body .card-title {
+  font-size: 1.25em;
+}
+.section05 .card .card-body h4 {
+  font-size: 1em;
+  font-weight: normal;
+}
+.section05 .card .card-body h4 span {
+  font-size: 1.5em;
+}
+.section05 .card .card-body h3 {
+  font-size: 1.25em;
+  font-weight: normal;
+}
+.section05 .card .card-body h3 span {
+  font-size: 1.5em;
+  color: red;
+}
+.section05 .card .subscription {
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  background: red;
+  padding: 0 5px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .test {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .test #videoBG {
+    z-index: 0;
+    width: 100%;
+    /*height:100%;*/
+    aspect-ratio: 16/9;
+  }
+  .test .video-text {
+    z-index: 2;
+    font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .test .video-text .inner .about p {
+    font-size: 0.8em;
+    line-height: 2em;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section06 .container {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section06 .container .subscription-course .item-3 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .test {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .test #videoBG {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  .test .video-text {
+    z-index: 2;
+    font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+  }
+  .test .video-text .inner .about p {
+    font-size: 0.9em;
+    line-height: 2em;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

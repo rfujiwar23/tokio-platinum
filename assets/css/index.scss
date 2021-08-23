@@ -1,0 +1,343 @@
+$tokio-font: 'ヒラギノ明朝 Pro W3', Hiragino Mincho Pro, 'ＭＳ Ｐ明朝', MS PMincho, serif;
+$tokio-white: #fff;
+
+
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    background: white;
+    border: none;
+  }
+  
+  .owl-carousel {
+    .owl-stage {
+      display: flex;
+    }
+    .owl-item {
+      display: flex;
+      flex: 1 0 auto;
+    }
+  }
+
+.video {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #videoBG {
+        z-index: 0;
+        width:100%;
+        /*height:100%;*/
+        aspect-ratio: 16/9;
+    }
+    .video-text {
+        z-index: 2;
+        font-family: $tokio-font;
+        position:absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .inner {
+            text-align: center;
+            h3 {
+                font-size:2em;
+            }
+            p {
+                font-size:1.75em;
+                margin: 3vh 0;
+            }
+            a {
+                color: $tokio-white;
+                background:black;
+                padding:10px 20px;
+                text-decoration: none;
+                font-size:1.25em;
+            }
+            
+        }
+    }
+}
+
+section {
+    font-family: $tokio-font;
+    padding:6vh 0;
+}
+
+.section01 {
+    background:yellowgreen;
+    .section01-title {
+        width:100%;
+        max-width:800px;
+        margin: 0 auto;
+        p {
+            line-height: 2em;
+        }
+    }
+}
+
+.test {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #videoBG {
+        z-index: 0;
+        width:100%;
+        /*height:100%;*/
+        aspect-ratio: 16/9;
+    }
+    .video-text {
+        z-index: 2;
+        font-family: $tokio-font;
+        position:absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .inner {
+            .about {
+                p {
+                    font-size:1em;
+                    line-height: 2em;
+                }
+            }
+            
+        }
+    }
+}
+
+.section06 {
+    .container {
+        .subscription {
+            box-shadow:1px 3px 6px rgba(25,25,25, 0.6);
+            margin:5vh auto;
+            padding:20px 30px;
+            h6{
+                font-size:1.25em;
+                span {
+                    background:slategrey;
+                    padding:5px 20px;
+                    color:white; 
+                }
+            }
+            h5 {
+                font-size:0.9em;
+                span {
+                    // background:slategrey;
+                    padding:5px 20px;
+                    // color: white;
+                }
+            }
+            .subscription-course {
+                .item-1 {
+                    padding:0 20px;
+                    text-align: center;
+                }
+                .item-2 {
+                    padding:0 20px;
+                    text-align: center;
+                }
+                .item-3 {
+                    padding:0 20px;
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                    // background:sandybrown;
+                    .information {
+                        // background:red;
+                        p {
+                            font-size:1em;
+                            padding-bottom:3px;
+                            border-bottom: 1px #9a9a9a solid; 
+                            span {
+                                font-size:1.5em;
+                                font-weight: bold;
+                                text-decoration:line-through;
+                                padding:0 3px;
+                            }
+                        }
+                        h3 {
+                            font-size:2em;
+                            font-weight:bold;
+                            color:#B51423;
+                            span {
+                                font-size:0.75em;
+                            }
+                        }
+                        h4 {
+                            font-size:1.1em;
+                            span {
+                                font-size:1.25em;
+                                padding:0 3px;
+                            }
+                        }
+                        p.small {
+                            font-size: 0.9em;
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section05 {
+    .card {
+        position: relative;
+        text-align: center;
+        // font-family: 'Noto Sans JP', sans-serif;
+        .card-body {
+          .card-title {
+            font-size: 1.25em;
+          }
+          h4 {
+            font-size:1em;
+            font-weight: normal;
+            span {
+              font-size:1.5em;
+            }
+          }
+          h3 {
+            font-size:1.25em;
+            font-weight: normal;
+            span {
+              font-size:1.5em;
+              color: red;
+            }
+          }
+          
+        }
+        .subscription {
+          position: absolute;
+          top:2%;
+          left:3%;
+          background:red;
+          padding:0 5px;
+          font-size:1.5em;
+          color:#fff;
+        }
+      }
+}
+
+
+@media screen and (max-width:992px) {
+    .test {
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #videoBG {
+            z-index: 0;
+            width:100%;
+            /*height:100%;*/
+            aspect-ratio: 16/9;
+        }
+        .video-text {
+            z-index: 2;
+            font-family: $tokio-font;
+            position:absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .inner {
+                .about {
+                    p {
+                        font-size:0.8em;
+                        line-height: 2em;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .section06 {
+        .container {
+            width:100%;
+            max-width: 1200px;
+        }
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .section06 {
+        .container {
+            .subscription-course {
+                .item-3 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    // .test {
+    //     position:relative;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     #videoBG {
+    //         z-index: 0;
+    //         width:100%;
+    //         /*height:100%;*/
+    //         aspect-ratio: 16/9;
+    //     }
+    //     .video-text {
+    //         z-index: 2;
+    //         font-family: $tokio-font;
+    //         position:absolute;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         padding:5vh 0;
+    //         .inner {
+    //             .about {
+    //                 p {
+    //                     font-size:0.7em;
+    //                     line-height: 2em;
+    //                 }
+    //             }
+                
+    //         }
+    //     }
+    // }
+}
+
+
+@media screen and (max-width:500px) {
+    .test {
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // height: 100vh;
+        #videoBG {
+            height: 100vh;
+        width: 100%;
+        object-fit: cover; // use "cover" to avoid distortion
+        position: relative;
+        }
+        .video-text {
+            z-index: 2;
+            font-family: $tokio-font;
+            position:absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:5vh 0;
+            .inner {
+                .about {
+                    p {
+                        font-size:0.9em;
+                        line-height: 2em;
+                    }
+                }
+                
+            }
+        }
+    }
+}
