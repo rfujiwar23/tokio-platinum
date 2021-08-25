@@ -118,18 +118,15 @@
   <div class="wrapper">
       <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="https://ifing-beauty.com/">
-        <img src="img/ifing_beauty_online_logo.svg" class="logo" height="30" class="d-inline-block align-top" alt="">
+        <img src="assets/images/tokio_pl.png" class="logo mx-2" height="60" class="d-inline-block align-top" alt="">
       </a>
       </nav>
 
 
 
-      <div class="video">
-        <video id="videoBG" autoplay muted playsinline loop controlsList="nodownload">
-          <source src="video/Sequence.mp4" type="video/mp4">
-        </video>
-        <div class="logo">
-          <h1><img src="img/tokio-ie-head-spa.png" alt="TOKIO INKARAMI PREMIUM" class="img-fluid"></h1>
+      <div class="jumbotron bg-secondary">
+        <div class="container text-center">
+          <img src="assets/images/tokio-pl-img.jpg" alt="TOKIO" class="img-fluid">
         </div>
       </div>
 
@@ -183,8 +180,8 @@
                       <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 section02-text">
                         <div class="row child-text p-2">
                           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 my-auto img-area">
-                            <div class="img">
-                              <img src="img/tokio-ie-head-spa.png" alt="TOKIO IE HEAD SPA" class="img-fluid">
+                            <div class="img bg-light text-center">
+                              <img src="assets/images/platinum-logo.png" alt="TOKIO IE HEAD SPA" class="img-fluid">
                             </div>
                           </div>
                           <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 about">
@@ -237,44 +234,41 @@
                     <h3>{{course.newPrice}}<span>円</span></h3>
                     <h4>(税込<span>{{Math.round(course.newPrice * 1.1)}}</span>円)</h4>
                     <p class="small">+ 送料無料</p>
-                    <a href="#" class="btn btn-primary my-2">定期購入はこちら</a>
+                    <a v-bind:href="course.subscriptionLink" class="btn btn-primary my-2">定期購入はこちら</a>
                     <br>
-                    <a href="#" class="btn btn-secondary my-2">単発購入はこちら</a>
+                    <a v-bind:href="course.regularPurchaseLink" class="btn btn-secondary my-2">単発購入はこちら</a>
                   </div>
                 </div>
               </div>
             </div>
+            
+          </div>
 
-            <!-- <div class="subscription">
-              <h3>シャンプー＆トリートメント500サイズ</h3>
-              <p>2ヶ月分</p>
-              <div class="subscription-course row">
-                <div class="col-lg-4 col-md-6 col-sm-6 item-1">
-                  <img src="assets/images/product_image/subscription900.png" alt="" class="img-fluid">
-                  <p>シャンプー 500ml<br>
-                  トリートメント 5000ml</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 item-2">
-                  <img src="assets/images/product_image/set2.png" alt="" class="img-fluid">
-                  <p>オイルトリートメント 100ml<br>
-                  トラベルセット(40ml, 40g, 25ml)</p>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 item-3">
-                  <div class="information">
-                    <p>通常価格<span>14600</span>円</p>
-                  <p>(税込<span>16060</span>円) 相当 ※初期価格</p>
-                  <h3>8835<span>円</span></h3>
-                  <h4>(税込<span>9519</span>円)</h4>
-                  <p class="small">+ 送料無料</p>
+          <div class="container" id="trial">
+            <h2 class="text-center mb-5">
+              定期コース
+            </h2>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6" v-for="set in sets">
+                <div class="trial-course">
+                  <h6><span>{{set.name}}</span></h6>
+                <h5 class="span mb-5"><span>{{set.trialPeriod}}</span></h5>
+                <img :src="set.image" :alt="set.name" class="img-fluid">
+                  <div class="price">
+                    <h4>{{set.price}}<span>円</span></h4>
+                    <p>(税込<span>{{Math.round(set.price * 1.1)}}</span>円)</p>
+                    <a v-bind:href="set.setLink" class="btn btn-primary">購入はこちら</a>
                   </div>
                 </div>
               </div>
-            </div> -->
-            
+            </div>
           </div>
+
+         
         </section>
 
 
+       
 
        
 

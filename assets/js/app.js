@@ -26,15 +26,15 @@ var vm = new Vue({
     }
   });
   
-  var char = new Vue({
-    el: "#characteristics",
+  var vm = new Vue({
+    el: '#trial',
     data: {
-      substances: [
-        {name: 'ナールスゲン', subtext: 'シャンプーに配合', about: 'コラーゲン、エラスチンの働きをよくするためのヒートショックプロテインや、ヒアルロン酸の産生も高める作用があります。これらの効果によって、皮膚のバリア機能を正常化し、保湿などの効果につながってきます。', img1: "img/graph002.png", text2: 'ナールスゲン 肌環境改善効果', img2: "img/tokio-pr-bg.png"},
-        {name: 'アルガンオイル', subtext: 'トリートメントに配合', about: '肌のバリア機能をサポートし、保水機能を上げます。また、ターンオーバーを促進し、肌の新陳代謝を良くします。その他には、血行を促進して肌荒れやすくを防ぎます。この効果が老化防止に繋がります。', img1: "img/graph001.png", text2: 'アルガンオイル ビタミンE含有量比較', img2: "img/tokio-pr-bg.png"},
+      sets: [
+        {name: 'トライアル①', trialPeriod: '2ヶ月分', image:'assets/images/product_image/item003_trial01.png', price: 8000, setLink: 'https://ifing-beauty.com/products/detail/62', stock: true },
+        {name: 'トライアル②', trialPeriod: '2ヶ月分', image:'assets/images/product_image/item004_trial02.png', price: 4800, setLink: 'https://ifing-beauty.com/products/detail/63', stock: true },
       ]
     }
-  })
+  });
   
   
   var imglist = new Vue ({
@@ -52,7 +52,7 @@ var vm = new Vue({
         {number: 9, imagelink: 'img/gallery9.jpg'},
       ]
     }
-  })
+  });
   
   
   var imglist = new Vue ({

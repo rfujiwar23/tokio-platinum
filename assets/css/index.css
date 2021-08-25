@@ -14,6 +14,12 @@
   flex: 1 0 auto;
 }
 
+.jumbotron .container {
+  width: 100%;
+  padding: 0;
+  min-width: 500px;
+}
+
 .video {
   position: relative;
   display: flex;
@@ -157,6 +163,34 @@ section {
   font-size: 0.9em;
   border-bottom: none;
 }
+.section06 .container .trial-course {
+  text-align: center;
+  box-shadow: 1px 3px 6px #9a9a9a;
+  padding: 3vh 0;
+}
+.section06 .container .trial-course h6 {
+  font-size: 1.5em;
+}
+.section06 .container .trial-course h6 span {
+  background: #708090;
+  padding: 3px 10px;
+  color: #fff;
+}
+.section06 .container .trial-course .price h4 {
+  color: #B51423;
+  font-size: 2.5em;
+}
+.section06 .container .trial-course .price h4 span {
+  font-size: 0.75em;
+}
+.section06 .container .trial-course .price p {
+  font-size: 1.25em;
+}
+.section06 .container .trial-course .price p span {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0 3px;
+}
 
 .section05 .card {
   position: relative;
@@ -178,13 +212,13 @@ section {
 }
 .section05 .card .card-body h3 span {
   font-size: 1.5em;
-  color: red;
+  color: #B51423;
 }
 .section05 .card .subscription {
   position: absolute;
   top: 2%;
   left: 3%;
-  background: red;
+  background: #B51423;
   padding: 0 5px;
   font-size: 1.5em;
   color: #fff;

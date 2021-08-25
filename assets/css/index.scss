@@ -1,5 +1,6 @@
 $tokio-font: 'ヒラギノ明朝 Pro W3', Hiragino Mincho Pro, 'ＭＳ Ｐ明朝', MS PMincho, serif;
 $tokio-white: #fff;
+$tokio-red: #B51423;
 
 
 .owl-theme .owl-dots .owl-dot {
@@ -7,17 +8,24 @@ $tokio-white: #fff;
     zoom: 1;
     background: white;
     border: none;
-  }
+}
   
-  .owl-carousel {
+.owl-carousel {
     .owl-stage {
-      display: flex;
+        display: flex;
     }
     .owl-item {
-      display: flex;
-      flex: 1 0 auto;
+        display: flex;
+        flex: 1 0 auto;
     }
-  }
+}
+.jumbotron {
+    .container {
+        width:100%;
+        padding:0;
+        min-width: 500px;
+    }
+}
 
 .video {
     position:relative;
@@ -105,6 +113,8 @@ section {
     }
 }
 
+
+
 .section06 {
     .container {
         .subscription {
@@ -177,6 +187,37 @@ section {
                     }
                 }
             }
+            
+        }
+        .trial-course {
+            text-align: center;
+            box-shadow: 1px 3px 6px #9a9a9a;
+            padding:3vh 0;
+            h6 {
+                font-size:1.5em;
+                span {
+                    background:#708090;
+                    padding:3px 10px;
+                    color:$tokio-white;
+                }
+            }
+            .price {
+                h4 {
+                    color: $tokio-red;
+                    font-size:2.5em;
+                    span {
+                        font-size:0.75em;
+                    }
+                }
+                p {
+                    font-size: 1.25em;
+                    span {
+                        font-size:1.25em;
+                        font-weight: bold;
+                        margin:0 3px;
+                    }
+                }
+            }
         }
     }
 }
@@ -202,7 +243,7 @@ section {
             font-weight: normal;
             span {
               font-size:1.5em;
-              color: red;
+              color: $tokio-red;
             }
           }
           
@@ -211,7 +252,7 @@ section {
           position: absolute;
           top:2%;
           left:3%;
-          background:red;
+          background:$tokio-red;
           padding:0 5px;
           font-size:1.5em;
           color:#fff;
@@ -309,6 +350,9 @@ section {
 
 
 @media screen and (max-width:500px) {
+
+    
+
     .test {
         position:relative;
         display: flex;
