@@ -9,6 +9,10 @@ $tokio-red: #B51423;
     background: white;
     border: none;
 }
+
+.highlight {
+    color: red;
+}
   
 .owl-carousel {
     .owl-stage {
@@ -67,6 +71,8 @@ $tokio-red: #B51423;
         video {
             width: 100% !important;
             height: auto !important;
+            border:1px solid #9a9a9a;
+            box-shadow: 1px 3px 6px rgba(0,0,0,0.6);
         }
     }  
 }
