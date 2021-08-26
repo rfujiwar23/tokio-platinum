@@ -1,9 +1,13 @@
 <html lang="ja">
   <head>
-    <script src="https://unpkg.com/vue"></script>
+    <!-- <script src="https://unpkg.com/vue"></script> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+
     <!-- local css -->
     <link rel="stylesheet" href="assets/css/index.css">
     <!-- AOS Motion -->
@@ -20,10 +24,6 @@
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> -->
    
-   <!-- sStar Rating -->
-    <script src="https://unpkg.com/vue-star-rating/dist/star-rating.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/vue-rate-it/dist/cdn/vue-rate-it.min.js">
-    
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbvue/lib/css/mdb.min.css"> -->
@@ -132,22 +132,25 @@
 
      
 
-    <div class="video">
-        <div class="video-text">
+    <div class="tokio">
+        
           <div class="inner">
-            <h3>なぜTOKIOは圧倒的な指示を得ているのか</h3>
+            <h3>なぜ<span>TOKIO</span>は圧倒的な指示を得ているのか</h3>
             <p>その理由は..</p>
+            
             <a href="http://www.tokio.tokyo/tokiostars.html">詳しくはこちら</a>
           </div>
-        </div> 
-        <video id="videoBG" autoplay muted playsinline loop controlsList="nodownload">
-          <source src="assets/images/video-sbm.mp4" type="video/mp4">  
-        </video>
+          <div class="embed-video col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-10 offset-1">
+            <video src="assets/images/tokio-video1.mp4" controls muted autoplay></video>
+          </div>
+
+          
+        
+        
        
     </div>
 
-      <div class="tokio"> 
-      </div>
+      
 
 
     <div class="container-fluid p-0">
@@ -166,41 +169,38 @@
         </section>
 
         <section class="to-outside-link">
-          <h5 class="text-center"><a href="https://tokioinkarami.ifing-beauty.com/lp2/#accordion">TOKIO IEの補修メカニズムについて</a></h5>
+          <div class="container">
+            <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-10 offset-1">
+              <a href="https://tokioinkarami.ifing-beauty.com/lp2/#accordion" class="btn btn-primary">TOKIO IEの補修メカニズムについて</a>
+            </div>
+          </div>
         </section>
 
 
         
         
 
-        <section class="test">
-            <div class="video-text">
+        <section class="test" style="padding:0">
+            <div class="video-text" id="platinum">
                 <div class="inner">
-                    <h2 class="text-center mb-5">HEAD SPAシリーズとは？</h2>
+                    <h2 class="text-center mb-5">{{ title }}</h2>
                       <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 section02-text">
-                        <div class="row child-text p-2">
-                          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 my-auto img-area">
-                            <div class="img bg-light text-center">
-                              <img src="assets/images/platinum-logo.png" alt="TOKIO IE HEAD SPA" class="img-fluid">
+                        <div class="row mx-0">
+                          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 img-area">
+                            <div class="img text-center" style="background:rgba(255, 255, 255,0.7);">
+                              <img :src="imgSource" alt="TOKIO IE HEAD SPA" class="img-fluid">
                             </div>
                           </div>
                           <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 about">
-                            <p>ダントツ一番人気のプラチナムシリーズは、髪のダメージをケアしながらふんわり・
-                                柔らかい髪質に整えて、しっとり・さらさらに仕上げます。
-                                シャンプー・トリートメントともに髪と同じ成分を使用しているので、
-                                洗うたびに健康な状態に近づけてくれます。特にシルクのようしなやかな指通りで、
-                                軽いのにしっとりまとまる仕上がり感が好評です。シャンプーの泡感は弾力感が抜群で、
-                                豊富な泡感を感じて頂けます。また、トリートメントに関しても髪に馴染ませた瞬間
-                                とろけるような柔らかさを実感して頂けます。どれを使うか悩んだ際は、
-                                こちらのプラチナムシリーズがオススメです。</p>
+                            <p class="p-2">{{ body }}</p>
                           </div>
                         </div>
                       </div>
                 </div>
             </div> 
-              <video id="videoBG" autoplay muted playsinline loop controlsList="nodownload">
-                <source src="assets/images/video-sbm.mp4" type="video/mp4">  
-              </video>
+            <video id="videoBG" autoplay muted playsinline loop controlsList="nodownload">
+              <source src="assets/images/video-sbm.mp4" type="video/mp4">  
+            </video>
         </section>
 
 
@@ -316,15 +316,24 @@
 
     <footer class="container-fluid">
 
-      <div class="footer-contents col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 pt-4">
-        <p class="small text-muted"><a href="https://ifing-beauty.com/help/tradelaw">特定商取引法に基づく表示</a> | <a href="https://ifing-beauty.com/help/privacy">プライバシーポリシー</a> | <a href="https://ifing-beauty.com/help/agreement">利用規約</a> | <a href="https://www.ifing.com/company/">会社情報</a></p>
-        <p class="small text-muted">
-          Copyright © IFING Co., Ltd. All Rights Reserved.</p>
+      <div class="footer-contents col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 pt-4" id="footer-links" >
+          <ul v-for="link in links">
+            <li><a v-bind:href="link.url">{{ link.text }}</a></li>
+          </ul>
+          <p class="small text-muted text-center">
+          Copyright © IFING Co., Ltd. <span id="dateTime"></span>  All Rights Reserved.</p>
       </div>
 
     </footer>
   </div>
   </body>
+ <script>
+  // create variable to display full date
+  var fullCurrentDate = new Date();
+  // get the year from the variable
+  var year = fullCurrentDate.getFullYear();
+  document.getElementById("dateTime").innerHTML = year;
+</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.0/jquery-migrate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="assets/js/app.js"></script>

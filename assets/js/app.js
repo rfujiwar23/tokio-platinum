@@ -37,20 +37,12 @@ var vm = new Vue({
   });
   
   
-  var imglist = new Vue ({
-    el: "#gridlist",
+  var about = new Vue ({
+    el: "#platinum",
     data: {
-      spaImages: [
-        {number: 1, imagelink: 'img/gallery1.jpg'},
-        {number: 2, imagelink: 'img/gallery2.jpg'},
-        {number: 3, imagelink: 'img/gallery3.jpg'},
-        {number: 4, imagelink: 'img/gallery4.jpg'},
-        {number: 5, imagelink: 'img/gallery5.jpg'},
-        {number: 6, imagelink: 'img/gallery6.jpg'},
-        {number: 7, imagelink: 'img/gallery7.jpg'},
-        {number: 8, imagelink: 'img/gallery8.jpg'},
-        {number: 9, imagelink: 'img/gallery9.jpg'},
-      ]
+        title: 'Platinum シリーズとは？', 
+        imgSource: 'assets/images/platinum-logo.png',
+        body: "ダントツ一番人気のプラチナムシリーズは、髪のダメージをケアしながらふんわり・柔らかい髪質に整えて、しっとり・さらさらに仕上げます。シャンプー・トリートメントともに髪と同じ成分を使用しているので、洗うたびに健康な状態に近づけてくれます。特にシルクのようしなやかな指通りで、軽いのにしっとりまとまる仕上がり感が好評です。シャンプーの泡感は弾力感が抜群で、豊富な泡感を感じて頂けます。また、トリートメントに関しても髪に馴染ませた瞬間とろけるような柔らかさを実感して頂けます。どれを使うか悩んだ際は、こちらのプラチナムシリーズがオススメです。",
     }
   });
   
@@ -73,4 +65,16 @@ var vm = new Vue({
     }
   })
   
+
+  var footer = new Vue ({
+    el: "#footer-links",
+    data: {
+      links: [
+        {text: '特定商取引法に基づく表示', url: 'https://ifing-beauty.com/help/tradelaw'},
+        {text: 'プライバシー・ポリシー', url: 'https://ifing-beauty.com/help/privacy'},
+        {text: '利用規約', url: 'https://ifing-beauty.com/help/agreement'},
+        {text: '会社情報', url: 'https://www.ifing.com/company/'}
+      ]
+    }
+  })
   

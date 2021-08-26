@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="dateTime"></p>
+<script>
+// create variable to display full date
+var fullCurrentDate = new Date();
+// create variable to display month in number with leading 0
+var month = ('0' + (fullCurrentDate.getMonth() + 1)).slice(-2);
+// create variable to display date in number with leading 0
+var date = ('0' + fullCurrentDate.getDate()).slice(-2);
+// create variable to get 
+var year = fullCurrentDate.getFullYear();
+var dateTimeNewFormat = year + '/' + month + '/' + date;
+document.getElementById("dateTime").innerHTML = dateTimeNewFormat;
+</script>
+</body>
+</html>

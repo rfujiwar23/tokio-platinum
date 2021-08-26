@@ -17,45 +17,47 @@
 .jumbotron .container {
   width: 100%;
   padding: 0;
-  min-width: 500px;
+  min-width: 350px;
 }
 
-.video {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.to-outside-link {
+  background: #f6e3ff;
+  background: linear-gradient(320deg, #f6e3ff 0%, white 100%);
 }
-.video #videoBG {
-  z-index: 0;
+.to-outside-link .btn {
   width: 100%;
-  /*height:100%;*/
-  aspect-ratio: 16/9;
 }
-.video .video-text {
-  z-index: 2;
+
+.tokio {
+  padding: 4vh 0;
   font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #ccd9f0;
+  background: linear-gradient(320deg, #ccd9f0 0%, white 100%);
 }
-.video .video-text .inner {
+.tokio .inner {
   text-align: center;
+  padding-bottom: 30px;
 }
-.video .video-text .inner h3 {
-  font-size: 2em;
+.tokio .inner h3 {
+  font-size: 1.5em;
 }
-.video .video-text .inner p {
-  font-size: 1.75em;
-  margin: 3vh 0;
+.tokio .inner h3 span {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 0 8px;
 }
-.video .video-text .inner a {
-  color: #fff;
+.tokio .inner p {
+  font-size: 1.25em;
+  margin: 30px auto;
+}
+.tokio .inner a {
   background: black;
   padding: 10px 20px;
-  text-decoration: none;
-  font-size: 1.25em;
+  color: white;
+}
+.tokio .embed-video video {
+  width: 100% !important;
+  height: auto !important;
 }
 
 section {
@@ -64,7 +66,8 @@ section {
 }
 
 .section01 {
-  background: yellowgreen;
+  background: #f4f4f4;
+  background: linear-gradient(320deg, #f4f4f4 0%, #dddddd 100%);
 }
 .section01 .section01-title {
   width: 100%;
@@ -224,6 +227,21 @@ section {
   color: #fff;
 }
 
+footer {
+  border-top: 1px dotted #9a9a9a;
+  background: #f8f0e3;
+}
+footer .footer-contents ul {
+  list-style: none;
+}
+footer .footer-contents ul li {
+  font-size: 0.7em;
+  text-align: center;
+}
+footer .footer-contents p {
+  font-size: 0.7em;
+}
+
 @media screen and (max-width: 992px) {
   .test {
     position: relative;
@@ -261,18 +279,12 @@ section {
     text-align: center;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
   .test {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .test #videoBG {
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
   }
   .test .video-text {
     z-index: 2;
@@ -283,9 +295,86 @@ section {
     align-items: center;
     padding: 5vh 0;
   }
-  .test .video-text .inner .about p {
-    font-size: 0.9em;
+  .test .video-text .section02-text .inner .img-area .img {
+    background: #f8f0e3;
+  }
+  .test .video-text .section02-text .inner .about p {
+    font-size: 1em;
     line-height: 2em;
+  }
+  .test #videoBG {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+}
+@media screen and (max-width: 500px) {
+  .video .video-text .inner h3 {
+    font-size: 1.25em;
+  }
+  .video .video-text .inner p {
+    font-size: 1em;
+  }
+
+  .section01 .section01-title p {
+    font-size: 0.8em;
+  }
+
+  .tokio .inner h3 {
+    font-size: 1.1em;
+  }
+  .tokio .inner p, .tokio .inner a {
+    font-size: 0.9em;
+  }
+
+  .test {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .test .video-text {
+    z-index: 2;
+    font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+  }
+  .test .video-text .section02-text .inner .img-area .img {
+    background: #f8f0e3;
+  }
+  .test .video-text .section02-text .inner .about p {
+    font-size: 1em;
+    line-height: 2em;
+  }
+  .test #videoBG {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+}
+@media screen and (max-width: 424px) {
+  .video .video-text .inner h3 {
+    font-size: 1.2em;
+  }
+  .video .video-text .inner p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .video .video-text .inner h3 {
+    font-size: 1em;
+  }
+  .video .video-text .inner p {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  .video .video-text .inner a {
+    font-size: 0.9em;
   }
 }
 
